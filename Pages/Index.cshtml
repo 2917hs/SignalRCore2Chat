@@ -1,0 +1,102 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+<script>
+    function joinChatServer() {
+        $('#spnGuestName').text($('#guestName').val());
+        $('#frmLogin').hide();
+        $('#chatServer').show();
+        $('#lblWelcome').show();
+    }
+</script>
+
+<div class="container-fluid">
+    <form class="form-inline" id="frmLogin">
+        <div class="form-group">
+            <input type="text" class="form-control" id="guestName" placeholder="Enter name" name="guestName">
+        </div>
+        <button type="button" class="btn btn-default" onclick="joinChatServer();">Join</button>        
+    </form>
+    <form class="form-inline">
+        <div class="form-group">
+            <label hidden="hidden" id="lblWelcome">Welcome <i id="spnGuestName"></i>,</label>
+        </div>
+    </form>
+    <div id="chatServer" hidden="hidden">
+        <h3 id="spnGuestName"></h3>
+        <form class="form-inline" id="frmSend" action="#">
+            <div class="form-group">
+                <input type="text" class="form-control" id="message" placeholder="type here..." name="message">
+            </div>
+            <input type="submit" class="btn btn-default" id="send" value="Send" />
+        </form>
+        <br />
+    </div>
+    <form class="form-inline">
+        <div class="row">
+            <div class="form-group chatServer col-lg-3">
+                <br />
+                <div id="messages"></div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<link href="~/css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/Site.css" rel="stylesheet" />
+<script src="js/signalr-client.js"></script>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    let transportType = signalR.TransportType.WebSockets;
+    let http = new signalR.HttpConnection(`http://${document.location.host}/chat`, { transport: transportType });
+    let connection = new signalR.HubConnection(http);
+
+    connection.start();
+    connection.on('Send', (guestName, message) => {
+        appendLine(guestName, message);
+    });
+
+    //connection.on('broadcastMessage', (name, message) => {
+    //    let p = document.createElement('p');
+    //    p.innerHTML = '<strong>' + name + '</strong> ' + message;        
+    //    $('#messages').append(p);
+    //});
+        
+    document.getElementById('frmSend').addEventListener('submit', event => {
+        let message = $('#message').val();
+        let guestName = $('#spnGuestName').text();
+        $('#message').val('');
+        connection.invoke('Send', guestName, message);
+        event.preventDefault();
+    });
+
+    function appendLine(guestName, message, color) {
+        let br = document.createElement("br");
+        let div = document.createElement('div');
+        let img = document.createElement('img');
+        let p = document.createElement('p');
+        let msg = document.createTextNode(`${message}`);
+        let time = new Date();
+        let span = document.createElement('span');
+        let spnTime;
+
+        time = time.getHours() + ':' + time.getMinutes();
+        spnTime = document.createTextNode(time);
+        div.className = 'msgBox';
+        p.appendChild(msg);
+        p.appendChild(br);
+        span.appendChild(spnTime);
+        img.src = "/images/profile.png";
+        if ($("#guestName").val() == guestName) {
+            img.className = 'fltLeft';
+        }
+        else {
+            img.className = 'fltRight';
+        }
+        div.prepend(img, p, span);
+        $('#messages').append(div);
+    };
+</script>

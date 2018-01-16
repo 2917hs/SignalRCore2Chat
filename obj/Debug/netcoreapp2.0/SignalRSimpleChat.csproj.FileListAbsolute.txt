@@ -1,0 +1,33 @@
+E:\SignalRSimpleChat-master\bin\Debug\netcoreapp2.0\SignalRSimpleChat.deps.json
+E:\SignalRSimpleChat-master\bin\Debug\netcoreapp2.0\SignalRSimpleChat.runtimeconfig.json
+E:\SignalRSimpleChat-master\bin\Debug\netcoreapp2.0\SignalRSimpleChat.runtimeconfig.dev.json
+E:\SignalRSimpleChat-master\bin\Debug\netcoreapp2.0\SignalRSimpleChat.dll
+E:\SignalRSimpleChat-master\bin\Debug\netcoreapp2.0\SignalRSimpleChat.pdb
+E:\SignalRSimpleChat-master\obj\Debug\netcoreapp2.0\SignalRSimpleChat.csprojResolveAssemblyReference.cache
+E:\SignalRSimpleChat-master\obj\Debug\netcoreapp2.0\SignalRSimpleChat.csproj.CoreCompileInputs.cache
+E:\SignalRSimpleChat-master\obj\Debug\netcoreapp2.0\SignalRSimpleChat.AssemblyInfoInputs.cache
+E:\SignalRSimpleChat-master\obj\Debug\netcoreapp2.0\SignalRSimpleChat.AssemblyInfo.cs
+E:\SignalRSimpleChat-master\obj\Debug\netcoreapp2.0\SignalRSimpleChat.dll
+E:\SignalRSimpleChat-master\obj\Debug\netcoreapp2.0\SignalRSimpleChat.pdb
+E:\SignalRSimpleChat-master - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.deps.json
+E:\SignalRSimpleChat-master - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.runtimeconfig.json
+E:\SignalRSimpleChat-master - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.runtimeconfig.dev.json
+E:\SignalRSimpleChat-master - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.dll
+E:\SignalRSimpleChat-master - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.pdb
+E:\SignalRSimpleChat-master - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.csprojResolveAssemblyReference.cache
+E:\SignalRSimpleChat-master - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.csproj.CoreCompileInputs.cache
+E:\SignalRSimpleChat-master - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.AssemblyInfoInputs.cache
+E:\SignalRSimpleChat-master - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.AssemblyInfo.cs
+E:\SignalRSimpleChat-master - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.dll
+E:\SignalRSimpleChat-master - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.pdb
+E:\SignalRSimpleChat-master - Copy - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.deps.json
+E:\SignalRSimpleChat-master - Copy - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.runtimeconfig.json
+E:\SignalRSimpleChat-master - Copy - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.runtimeconfig.dev.json
+E:\SignalRSimpleChat-master - Copy - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.dll
+E:\SignalRSimpleChat-master - Copy - Copy\bin\Debug\netcoreapp2.0\SignalRSimpleChat.pdb
+E:\SignalRSimpleChat-master - Copy - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.csprojResolveAssemblyReference.cache
+E:\SignalRSimpleChat-master - Copy - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.csproj.CoreCompileInputs.cache
+E:\SignalRSimpleChat-master - Copy - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.AssemblyInfoInputs.cache
+E:\SignalRSimpleChat-master - Copy - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.AssemblyInfo.cs
+E:\SignalRSimpleChat-master - Copy - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.dll
+E:\SignalRSimpleChat-master - Copy - Copy\obj\Debug\netcoreapp2.0\SignalRSimpleChat.pdb
